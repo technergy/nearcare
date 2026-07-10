@@ -1,0 +1,8 @@
+{
+  "name": "Near Care Support",
+  "description": "Aged care and NDIS support services website with appointment booking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
