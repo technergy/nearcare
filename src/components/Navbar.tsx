@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Logo } from './Logo';
-import { Menu, X, ChevronRight } from 'lucide-react';
+import { Menu, X, ChevronRight, ShieldCheck } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
 export const Navbar = () => {
@@ -10,50 +10,68 @@ export const Navbar = () => {
   const navLinks = [
     { name: 'Home', href: '/' },
     { name: 'About Us', href: '/about' },
-    { name: 'Services', href: '/services' },
-    { name: 'Programs', href: '/departments' },
-    { name: 'Blog', href: '/blog' },
+    { name: 'NDIS Services', href: '/services' },
+    { name: 'Care Programs', href: '/departments' },
+    { name: 'NDIS Policies & Rights', href: '/compliance' },
+    { name: 'FAQ', href: '/faq' },
   ];
 
   return (
-    <nav className="bg-white shadow-sm sticky top-0 z-50">
+    <nav className="bg-white shadow-sm sticky top-0 z-50 no-print" aria-label="Main Navigation">
       <div className="max-w-[90%] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0 flex items-center">
-            <Link to="/">
-              <Logo className="w-8 h-8 md:w-10 md:h-10" layout="horizontal" />
+            <Link to="/" aria-label="Near Care Support Home">
+              <Logo className="w-9 h-9 md:w-10 md:h-10" layout="horizontal" />
             </Link>
           </div>
           
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
-            {navLinks.map((link) => (
-              <Link 
-                key={link.name} 
-                to={link.href}
-                className={`font-medium transition-colors font-sans text-[15px] ${location.pathname === link.href ? 'text-teal-500' : 'text-gray-600 hover:text-teal-500'}`}
-              >
-                {link.name}
-              </Link>
-            ))}
+          <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
+            {navLinks.map((link) => {
+              const isActive = location.pathname === link.href;
+              return (
+                <Link 
+                  key={link.name} 
+                  to={link.href}
+                  className={`font-medium transition-colors font-sans text-[15px] px-2 py-1.5 rounded-lg ${
+                    isActive 
+                      ? 'text-teal-600 font-semibold bg-teal-50/70' 
+                      : 'text-gray-700 hover:text-teal-600 hover:bg-gray-50'
+                  }`}
+                  aria-current={isActive ? 'page' : undefined}
+                >
+                  {link.name}
+                </Link>
+              );
+            })}
             <Link 
               to="/contact" 
-              className="flex items-center gap-2 bg-purple-600 text-white px-6 py-2.5 rounded-full font-medium transition-all hover:bg-purple-700"
+              className="flex items-center gap-2 bg-purple-600 text-white px-6 py-3 rounded-full font-medium transition-all hover:bg-purple-700 shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-400"
             >
               Appointment
-              <span className="bg-teal-400 rounded-full p-1 -mr-3">
+              <span className="bg-teal-400 rounded-full p-1 -mr-2">
                 <ChevronRight className="w-4 h-4 text-white" />
               </span>
             </Link>
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden flex items-center">
+          <div className="lg:hidden flex items-center gap-3">
+            <Link
+              to="/compliance"
+              className="inline-flex items-center gap-1 bg-purple-50 text-purple-700 text-xs font-semibold px-3 py-1.5 rounded-full"
+            >
+              <ShieldCheck className="w-3.5 h-3.5" />
+              Policies
+            </Link>
             <button 
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 hover:text-teal-500 focus:outline-none"
+              className="p-2 text-gray-700 hover:text-teal-600 focus:outline-none rounded-lg"
+              aria-label={isOpen ? "Close main menu" : "Open main menu"}
+              aria-expanded={isOpen}
             >
-              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
             </button>
           </div>
         </div>
@@ -61,27 +79,34 @@ export const Navbar = () => {
 
       {/* Mobile Menu */}
       <div 
-        className={`md:hidden bg-white border-b border-gray-100 absolute w-full shadow-lg transition-all duration-300 ease-in-out overflow-hidden origin-top ${
-          isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 pointer-events-none'
+        className={`lg:hidden bg-white border-b border-gray-100 absolute w-full shadow-xl transition-all duration-300 ease-in-out overflow-hidden origin-top ${
+          isOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0 pointer-events-none'
         }`}
       >
-        <div className="px-4 pt-2 pb-6 space-y-1">
-          {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              to={link.href}
-              onClick={() => setIsOpen(false)}
-              className="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-teal-500 hover:bg-teal-50 transition-colors"
-            >
-              {link.name}
-            </Link>
-          ))}
+        <div className="px-5 pt-3 pb-6 space-y-1.5">
+          {navLinks.map((link) => {
+            const isActive = location.pathname === link.href;
+            return (
+              <Link
+                key={link.name}
+                to={link.href}
+                onClick={() => setIsOpen(false)}
+                className={`block px-4 py-3 rounded-xl text-base font-medium transition-colors ${
+                  isActive 
+                    ? 'text-teal-600 bg-teal-50 font-bold' 
+                    : 'text-gray-700 hover:text-teal-600 hover:bg-gray-50'
+                }`}
+              >
+                {link.name}
+              </Link>
+            );
+          })}
           <Link
             to="/contact"
             onClick={() => setIsOpen(false)}
-            className="flex items-center justify-center gap-2 mt-4 bg-purple-600 text-white px-3 py-3 rounded-md text-base font-medium hover:bg-purple-700 transition-colors"
+            className="flex items-center justify-center gap-2 mt-4 bg-purple-600 text-white px-4 py-3.5 rounded-xl text-base font-semibold hover:bg-purple-700 transition-colors shadow-md"
           >
-            Appointment
+            Book Free Consultation
             <ChevronRight className="w-5 h-5 text-teal-400" />
           </Link>
         </div>
@@ -89,4 +114,3 @@ export const Navbar = () => {
     </nav>
   );
 };
-
