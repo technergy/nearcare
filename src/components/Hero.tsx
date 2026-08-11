@@ -23,7 +23,7 @@ export const Hero = () => {
         <div className="flex-1 text-center lg:text-left">
           <div className="inline-flex items-center gap-2 bg-purple-100/80 text-purple-700 px-4 py-1.5 rounded-full font-semibold text-sm mb-6 shadow-sm">
             <Shield className="w-4 h-4 text-teal-600" />
-            <span>Approved Registered NDIS & Aged Care Provider</span>
+            <span>Approved Registered NDIS Provider (Door to Door Service)</span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-[#0f172a] leading-[1.08] mb-6 tracking-tight">
@@ -31,7 +31,7 @@ export const Hero = () => {
           </h1>
           
           <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
-            We support people to live independently and feel confident in their community. Providing tailored NDIS disability supports, Supported Independent Living (SIL), and aged care across Australia in clear, jargon-free language.
+            We support people to live independently and feel confident in their community. Providing tailored, door to door NDIS disability supports and Supported Independent Living (SIL) across Australia in clear, jargon-free language.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
@@ -95,7 +95,7 @@ export const Hero = () => {
 
                 {/* The actual image masked by the blob */}
                 <img 
-                  src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80&w=1000"
+                  src="https://images.pexels.com/photos/4063506/pexels-photo-4063506.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
                   alt="NDIS participant enjoying community support in Australia"
                   className="absolute inset-0 w-full h-full object-cover z-20"
                   style={{ clipPath: 'url(#blob-mask)', WebkitClipPath: 'url(#blob-mask)' }}

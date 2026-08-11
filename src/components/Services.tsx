@@ -1,50 +1,50 @@
 import React from 'react';
-import { HeartPulse, Home, Users, Activity, FileText, Shield, ArrowRight } from 'lucide-react';
+import { HeartPulse, Home, Users, Activity, FileText, Shield, ArrowRight, Car } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const Services = () => {
   const services = [
     {
       icon: <Home className="w-10 h-10 text-purple-600" />,
-      title: "Supported Independent Living (SIL)",
-      description: "Helping you live independently in your own home or shared living space, with 24/7 or scheduled support tailored to your personal routines and lifestyle.",
-      link: "/housing",
-      badge: "NDIS Core Support"
+      title: "Personal Cares (Home)",
+      description: "Respectful and dignified assistance with everyday personal care tailored to your unique routines and lifestyle in the comfort of your home.",
+      link: "/services/personal-cares",
+      badge: "Core Support"
     },
     {
-      icon: <Shield className="w-10 h-10 text-teal-600" />,
-      title: "Community Access & Participation",
-      description: "We support people to live independently and feel confident in their community. Whether attending work, study, sports, or social outings, we are by your side.",
-      link: "/departments",
-      badge: "Social & Community"
+      icon: <Users className="w-10 h-10 text-teal-600" />,
+      title: "Community Services",
+      description: "Supporting you to actively participate in your community, whether it's attending events, pursuing hobbies, or joining local groups.",
+      link: "/services/community-services",
+      badge: "Community Participation"
     },
     {
-      icon: <Users className="w-10 h-10 text-purple-600" />,
-      title: "Daily Personal & Domestic Assistance",
-      description: "Respectful, dignified assistance with everyday personal care, cooking nutritious meals, cleaning, laundry, and maintaining your household.",
-      link: "/departments",
-      badge: "Daily Living"
+      icon: <Car className="w-10 h-10 text-purple-600" />,
+      title: "Transport",
+      description: "Safe and reliable transport assistance to help you get to appointments, work, or social outings, ensuring you maintain your independence.",
+      link: "/services/transport",
+      badge: "Travel Assistance"
     },
     {
-      icon: <FileText className="w-10 h-10 text-teal-600" />,
-      title: "Support Coordination & Plan Guidance",
-      description: "Expert, jargon-free guidance to help you understand your NDIS funding, connect with trusted quality services, and achieve your short- and long-term goals.",
-      link: "/departments",
-      badge: "Capacity Building"
+      icon: <HeartPulse className="w-10 h-10 text-teal-600" />,
+      title: "Social Services",
+      description: "Fostering meaningful connections and social inclusion through guided activities and support designed to enhance your social well-being.",
+      link: "/services/social-services",
+      badge: "Social Wellbeing"
     },
     {
-      icon: <HeartPulse className="w-10 h-10 text-purple-600" />,
-      title: "Respite & Short-Term Accommodation",
-      description: "Fulfilling short-term stays and respite support that offer a positive change of scenery for you, while giving primary family caregivers well-deserved rest.",
-      link: "/departments",
-      badge: "Respite Care"
+      icon: <FileText className="w-10 h-10 text-purple-600" />,
+      title: "Domestic Services",
+      description: "Assistance with household tasks such as cleaning, laundry, and maintaining your living environment to ensure it is safe and comfortable.",
+      link: "/services/domestic-services",
+      badge: "Household Tasks"
     },
     {
       icon: <Activity className="w-10 h-10 text-teal-600" />,
-      title: "Allied Health Therapy & Nursing",
-      description: "Qualified nurses, occupational therapists, and physiotherapists who visit your home to support your physical, emotional, and cognitive well-being.",
-      link: "/departments",
-      badge: "Clinical & Health"
+      title: "Autism Cares",
+      description: "Specialized, compassionate support for individuals with Autism, focusing on individual strengths, sensory needs, and personal goals.",
+      link: "/services/autism-cares",
+      badge: "Specialised Support"
     }
   ];
 
@@ -63,7 +63,7 @@ export const Services = () => {
             Supports Designed Around Your Goals
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto leading-relaxed text-lg">
-            We use plain language and put you in the driver&apos;s seat. Explore our detailed NDIS and Aged Care services—each structured so you can live independently, safely, and confidently.
+            We use plain language and put you in the driver&apos;s seat. Explore our detailed door to door NDIS services—each structured so you can live independently, safely, and confidently.
           </p>
         </div>
 

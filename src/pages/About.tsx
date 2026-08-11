@@ -27,7 +27,7 @@ export const About = () => {
         <div className="w-full lg:w-1/2 relative">
           <div className="absolute inset-0 bg-purple-600 transform translate-x-4 translate-y-4 rounded-3xl -z-10"></div>
           <img 
-            src="https://images.unsplash.com/photo-1516302752625-fcc3c50ae61f?auto=format&fit=crop&q=80&w=1000" 
+            src="https://images.pexels.com/photos/7446609/pexels-photo-7446609.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" 
             alt="Participant smiling with support worker in Australia" 
             className="rounded-3xl shadow-xl w-full object-cover h-[480px]"
           />
@@ -39,7 +39,7 @@ export const About = () => {
                 </div>
                 <div className="font-bold text-gray-800 leading-tight">Years Supporting<br/>Australians</div>
              </div>
-             <p className="text-sm text-gray-600">Registered with national NDIS and Aged Care quality standards.</p>
+             <p className="text-sm text-gray-600">Registered with national NDIS quality standards.</p>
           </div>
         </div>
 
@@ -49,7 +49,7 @@ export const About = () => {
             Your Voice, Your Choice, Your Community
           </h2>
           <p className="text-gray-600 mb-6 leading-relaxed text-lg">
-            Near Care Support is proudly Australian-owned. We know that navigating NDIS funding or My Aged Care can feel overwhelming when paperwork is filled with complex jargon. That is why we speak plain language.
+            Near Care Support is proudly Australian-owned. We know that navigating NDIS funding can feel overwhelming when paperwork is filled with complex jargon. That is why we speak plain language.
           </p>
           <p className="text-gray-600 mb-8 leading-relaxed text-lg">
             Whether you need Supported Independent Living (SIL), daily personal assistance, or someone to accompany you to social outings, we work alongside you as partners—respecting your culture, your identity, and your goals.

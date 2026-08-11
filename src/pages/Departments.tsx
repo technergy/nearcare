@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 
 export const Departments = () => {
   const departments = [
-    { name: "Home Care Packages", desc: "Government-funded assistance with daily living, domestic help, and personal care.", image: "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80&w=800" },
-    { name: "NDIS Core Supports", desc: "Everyday support including community participation and transport assistance.", image: "https://images.unsplash.com/photo-1581579439050-8dc81cb14b0b?auto=format&fit=crop&q=80&w=800" },
-    { name: "Respite Care", desc: "Short-term relief and supportive care for primary caregivers and their loved ones.", image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800" },
-    { name: "Allied Health Therapy", desc: "Access to physiotherapy, occupational therapy, and speech pathology services.", image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=800" },
-    { name: "Nursing Services", desc: "In-home clinical care, wound management, and medication administration.", image: "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=800" },
-    { name: "Dementia Support", desc: "Specialized cognitive care and memory support for individuals living with dementia.", image: "https://images.unsplash.com/photo-1516302752625-fcc3c50ae61f?auto=format&fit=crop&q=80&w=800" },
-    { name: "Domestic Assistance", desc: "Help with household chores, cleaning, laundry, and meal preparation.", image: "https://images.unsplash.com/photo-1556910103-1c02745a8e4f?auto=format&fit=crop&q=80&w=800" },
-    { name: "Social Support", desc: "Companionship, social outings, and community group engagement activities.", image: "https://images.unsplash.com/photo-1529156069898-49953eb1b5ae?auto=format&fit=crop&q=80&w=800" },
+    { name: "Home Care Packages", desc: "Government-funded assistance with daily living, domestic help, and personal care.", image: "https://images.pexels.com/photos/7446630/pexels-photo-7446630.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" },
+    { name: "NDIS Core Supports", desc: "Everyday support including community participation and transport assistance.", image: "https://images.pexels.com/photos/8415703/pexels-photo-8415703.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" },
+    { name: "Respite Care", desc: "Short-term relief and supportive care for primary caregivers and their loved ones.", image: "https://images.pexels.com/photos/7446778/pexels-photo-7446778.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" },
+    { name: "Allied Health Therapy", desc: "Access to physiotherapy, occupational therapy, and speech pathology services.", image: "https://images.pexels.com/photos/6284838/pexels-photo-6284838.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" },
+    { name: "Nursing Services", desc: "In-home clinical care, wound management, and medication administration.", image: "https://images.pexels.com/photos/8415730/pexels-photo-8415730.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" },
+    { name: "Dementia Support", desc: "Specialized cognitive care and memory support for individuals living with dementia.", image: "https://images.pexels.com/photos/33768885/pexels-photo-33768885.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" },
+    { name: "Domestic Assistance", desc: "Help with household chores, cleaning, laundry, and meal preparation.", image: "https://images.pexels.com/photos/7698991/pexels-photo-7698991.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" },
+    { name: "Social Support", desc: "Companionship, social outings, and community group engagement activities.", image: "https://images.pexels.com/photos/6284840/pexels-photo-6284840.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" },
   ];
 
   return (

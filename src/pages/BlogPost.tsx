@@ -11,7 +11,7 @@ export const BlogPost = () => {
       title: "10 Tips for Healthy Aging",
       date: "Oct 12, 2023",
       category: "Senior Health",
-      image: "https://images.unsplash.com/photo-1516302752625-fcc3c50ae61f?auto=format&fit=crop&q=80&w=1200",
+      image: "https://images.pexels.com/photos/6284836/pexels-photo-6284836.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
       content: `
         Healthy aging is about more than just physical health; it's about maintaining a sense of purpose and staying engaged with the world around you.
         
@@ -33,7 +33,7 @@ export const BlogPost = () => {
       title: "Understanding Memory Care",
       date: "Nov 05, 2023",
       category: "Wellness",
-      image: "https://images.unsplash.com/photo-1581579439050-8dc81cb14b0b?auto=format&fit=crop&q=80&w=1200",
+      image: "https://images.pexels.com/photos/6284830/pexels-photo-6284830.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
       content: `
         Memory care is a specialized type of support designed for individuals living with Alzheimer's disease, dementia, or other memory impairments. 
         
@@ -51,7 +51,7 @@ export const BlogPost = () => {
       title: "The Importance of Companionship",
       date: "Dec 01, 2023",
       category: "Companionship",
-      image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=1200",
+      image: "https://images.pexels.com/photos/6284846/pexels-photo-6284846.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
       content: `
         Companionship is a vital aspect of overall well-being, especially for older adults who may be more susceptible to isolation and loneliness.
         
@@ -69,7 +69,7 @@ export const BlogPost = () => {
       title: "Navigating NDIS Funding",
       date: "Jan 15, 2024",
       category: "NDIS Guide",
-      image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=1200",
+      image: "https://images.pexels.com/photos/8415872/pexels-photo-8415872.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
       content: `
         The National Disability Insurance Scheme (NDIS) can be complex to navigate, but understanding your funding is crucial to getting the support you need.
         
@@ -86,7 +86,7 @@ export const BlogPost = () => {
       title: "Home Modifications for Independence",
       date: "Feb 02, 2024",
       category: "Independent Living",
-      image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=1200",
+      image: "https://images.pexels.com/photos/6284844/pexels-photo-6284844.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
       content: `
         Modifying your home can significantly improve safety and accessibility, allowing you or your loved ones to live independently for longer.
         
@@ -103,7 +103,7 @@ export const BlogPost = () => {
       title: "Nutrition for Older Adults",
       date: "Mar 10, 2024",
       category: "Diet & Nutrition",
-      image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80&w=1200",
+      image: "https://images.pexels.com/photos/8415689/pexels-photo-8415689.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
       content: `
         As we age, our nutritional needs change. A balanced diet is essential for maintaining health, energy, and cognitive function.
         

@@ -28,7 +28,7 @@ export const HousingSupport = () => {
             <div className="rounded-[1.5rem] overflow-hidden mb-6 aspect-[4/3] relative">
               <span className="absolute top-4 left-4 bg-teal-400 text-white font-semibold px-4 py-1 rounded-full z-10">High Physical Support</span>
               <img 
-                src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=1200" 
+                src="https://images.pexels.com/photos/6195461/pexels-photo-6195461.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" 
                 alt="Melbourne Property" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />
@@ -42,7 +42,7 @@ export const HousingSupport = () => {
             <div className="rounded-[1.5rem] overflow-hidden mb-6 aspect-[4/3] relative">
               <span className="absolute top-4 left-4 bg-purple-600 text-white font-semibold px-4 py-1 rounded-full z-10">Robust SDA</span>
               <img 
-                src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=1200" 
+                src="https://images.pexels.com/photos/6284843/pexels-photo-6284843.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" 
                 alt="Sydney Property" 
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />

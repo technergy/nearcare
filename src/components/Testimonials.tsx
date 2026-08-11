@@ -6,21 +6,21 @@ const testimonials = [
     id: 1,
     name: "Sarah Jenkins",
     role: "Family Member, NSW",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400",
+    image: "https://images.pexels.com/photos/8527286/pexels-photo-8527286.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     quote: "The care and compassion shown to my mother has been truly exceptional. We couldn't have asked for a better support system for our family here in Australia."
   },
   {
     id: 2,
     name: "David Chen",
     role: "NDIS Participant, VIC",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400",
+    image: "https://images.pexels.com/photos/8127496/pexels-photo-8127496.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     quote: "The team has been incredibly supportive in helping me achieve my NDIS goals. Their dedication to my independence is unmatched."
   },
   {
     id: 3,
     name: "Margaret O'Reilly",
     role: "Home Care Client, QLD",
-    image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=400",
+    image: "https://images.pexels.com/photos/8127503/pexels-photo-8127503.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
     quote: "Having someone visit me regularly for a chat and help around the house has changed my life. I feel so much more confident living at home."
   }
 ];

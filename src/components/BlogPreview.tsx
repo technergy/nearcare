@@ -7,14 +7,14 @@ export const BlogPreview = () => {
       title: "10 Tips for Healthy Aging",
       date: "Oct 12, 2023",
       category: "Senior Health",
-      image: "https://images.unsplash.com/photo-1516302752625-fcc3c50ae61f?auto=format&fit=crop&q=80&w=800",
+      image: "https://images.pexels.com/photos/33768885/pexels-photo-33768885.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
       excerpt: "Discover the best practices and daily habits you can adopt to ensure your loved ones stay healthy and active."
     },
     {
       title: "Understanding Memory Care",
       date: "Nov 05, 2023",
       category: "Wellness",
-      image: "https://images.unsplash.com/photo-1581579439050-8dc81cb14b0b?auto=format&fit=crop&q=80&w=800",
+      image: "https://images.pexels.com/photos/8415703/pexels-photo-8415703.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
       excerpt: "Learn how to identify signs of cognitive decline and take proactive steps to support cognitive function."
     }
   ];

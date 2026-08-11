@@ -17,7 +17,7 @@ export const Footer = () => {
               </div>
             </div>
             <p className="text-slate-400 mt-4 max-w-sm leading-relaxed text-sm">
-              We support people to live independently and feel confident in their community. Delivering compassionate, participant-centered disability and aged care supports across Australia.
+              We support people to live independently and feel confident in their community. Delivering compassionate, participant-centered door to door disability supports across Australia.
             </p>
             <div className="inline-flex items-center gap-2 bg-purple-900/60 border border-purple-700/50 text-purple-300 px-3.5 py-2 rounded-xl text-xs font-semibold">
               <Shield className="w-4 h-4 text-teal-400" />

@@ -10,7 +10,7 @@ export const ProgramDetail = () => {
     'home-care-packages': {
       name: "Home Care Packages",
       desc: "Government-funded assistance with daily living, domestic help, and personal care.",
-      image: "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80&w=1200",
+      image: "https://images.pexels.com/photos/7446624/pexels-photo-7446624.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
       content: "Home Care Packages (HCP) are a government-funded program designed to support older Australians to live independently in their own homes for as long as possible. We provide a range of coordinated services tailored to your individual needs, from basic assistance to complex care.",
       features: [
         "Personal care and hygiene assistance",
@@ -23,7 +23,7 @@ export const ProgramDetail = () => {
     'ndis-core-supports': {
       name: "NDIS Core Supports",
       desc: "Everyday support including community participation and transport assistance.",
-      image: "https://images.unsplash.com/photo-1581579439050-8dc81cb14b0b?auto=format&fit=crop&q=80&w=1200",
+      image: "https://images.pexels.com/photos/6284830/pexels-photo-6284830.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
       content: "Our NDIS Core Supports services are designed to help participants with everyday activities, enabling them to live as autonomously as possible. We work closely with you to understand your goals and develop a support plan that aligns with your NDIS funding.",
       features: [
         "Assistance with daily personal activities",
@@ -36,7 +36,7 @@ export const ProgramDetail = () => {
     'respite-care': {
       name: "Respite Care",
       desc: "Short-term relief and supportive care for primary caregivers and their loved ones.",
-      image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=1200",
+      image: "https://images.pexels.com/photos/6284846/pexels-photo-6284846.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
       content: "Caring for a loved one is rewarding but can also be demanding. Our Respite Care services offer short-term, temporary relief for primary caregivers, ensuring their loved ones continue to receive high-quality care in a safe and supportive environment.",
       features: [
         "In-home respite care",
@@ -49,7 +49,7 @@ export const ProgramDetail = () => {
     'allied-health-therapy': {
       name: "Allied Health Therapy",
       desc: "Access to physiotherapy, occupational therapy, and speech pathology services.",
-      image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=1200",
+      image: "https://images.pexels.com/photos/6284842/pexels-photo-6284842.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
       content: "Our Allied Health Therapy services aim to improve your physical function, mobility, and overall well-being. We offer a multidisciplinary approach, connecting you with experienced professionals who provide targeted therapies tailored to your specific condition or goals.",
       features: [
         "Physiotherapy for mobility and pain management",
@@ -62,7 +62,7 @@ export const ProgramDetail = () => {
     'nursing-services': {
       name: "Nursing Services",
       desc: "In-home clinical care, wound management, and medication administration.",
-      image: "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&q=80&w=1200",
+      image: "https://images.pexels.com/photos/8415675/pexels-photo-8415675.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
       content: "Our qualified nursing staff provide professional clinical care in the comfort of your own home. Whether you need ongoing monitoring for a chronic condition, post-hospital care, or wound management, our experienced nurses deliver compassionate and expert care.",
       features: [
         "Medication management and administration",
@@ -75,7 +75,7 @@ export const ProgramDetail = () => {
     'dementia-support': {
       name: "Dementia Support",
       desc: "Specialized cognitive care and memory support for individuals living with dementia.",
-      image: "https://images.unsplash.com/photo-1516302752625-fcc3c50ae61f?auto=format&fit=crop&q=80&w=1200",
+      image: "https://images.pexels.com/photos/6284836/pexels-photo-6284836.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
       content: "We provide specialized support for individuals living with dementia, focusing on maintaining their dignity, independence, and quality of life. Our caregivers are trained in dementia care techniques and create a safe, stimulating, and supportive environment.",
       features: [
         "Cognitive stimulation activities",
@@ -88,7 +88,7 @@ export const ProgramDetail = () => {
     'domestic-assistance': {
       name: "Domestic Assistance",
       desc: "Help with household chores, cleaning, laundry, and meal preparation.",
-      image: "https://images.unsplash.com/photo-1556910103-1c02745a8e4f?auto=format&fit=crop&q=80&w=1200",
+      image: "https://images.pexels.com/photos/6284849/pexels-photo-6284849.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
       content: "Maintaining a clean and organized home is essential for safety and well-being. Our Domestic Assistance services provide practical help with everyday household tasks, allowing you to focus on enjoying your time and living comfortably.",
       features: [
         "General cleaning (vacuuming, dusting, mopping)",
@@ -101,7 +101,7 @@ export const ProgramDetail = () => {
     'social-support': {
       name: "Social Support",
       desc: "Companionship, social outings, and community group engagement activities.",
-      image: "https://images.unsplash.com/photo-1529156069898-49953eb1b5ae?auto=format&fit=crop&q=80&w=1200",
+      image: "https://images.pexels.com/photos/7698540/pexels-photo-7698540.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
       content: "Staying socially active is vital for mental health and emotional well-being. Our Social Support services are designed to help you stay connected with your community, pursue your interests, and build meaningful relationships.",
       features: [
         "Companionship and conversation",

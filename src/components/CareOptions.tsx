@@ -4,25 +4,25 @@ const options = [
   {
     id: '01',
     title: 'Home care assistance.',
-    image: 'https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.pexels.com/photos/7446630/pexels-photo-7446630.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     description: 'Assistance for the elderly in various aspects of life, ensuring comfort and independence.'
   },
   {
     id: '02',
     title: 'Support for seniors',
-    image: 'https://images.unsplash.com/photo-1581579439050-8dc81cb14b0b?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.pexels.com/photos/8415703/pexels-photo-8415703.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     description: 'Companionship, daily chores, and engaging activities tailored for seniors.'
   },
   {
     id: '03',
     title: 'Therapist helps.',
-    image: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.pexels.com/photos/7446778/pexels-photo-7446778.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     description: 'Professional therapy services including physical and occupational support.'
   },
   {
     id: '04',
     title: 'Disability support',
-    image: 'https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.pexels.com/photos/6284838/pexels-photo-6284838.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     description: 'Specialized care plans designed to empower and assist individuals with disabilities.'
   }
 ];

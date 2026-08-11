@@ -19,7 +19,7 @@ import { Contact } from './pages/Contact';
 import { HousingPage } from './pages/HousingPage';
 import { CompliancePage } from './pages/CompliancePage';
 import { FAQPage } from './pages/FAQPage';
-
+import { ServiceDetail } from './pages/ServiceDetail';
 function ScrollToTop() {
   const { pathname } = useLocation();
 
@@ -43,6 +43,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<ServicesPage />} />
+            <Route path="/services/:slug" element={<ServiceDetail />} />
             <Route path="/departments" element={<Departments />} />
             <Route path="/programs/:slug" element={<ProgramDetail />} />
             <Route path="/compliance" element={<CompliancePage />} />

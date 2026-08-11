@@ -7,7 +7,7 @@ export const ContactCTA = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80&w=2000" 
+          src="https://images.pexels.com/photos/8415711/pexels-photo-8415711.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" 
           alt="Contact us background" 
           className="w-full h-full object-cover opacity-30"
         />

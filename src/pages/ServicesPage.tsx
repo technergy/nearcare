@@ -8,7 +8,7 @@ export const ServicesPage = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?auto=format&fit=crop&q=80&w=2000" 
+            src="https://images.pexels.com/photos/7698982/pexels-photo-7698982.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" 
             alt="Services Background" 
             className="w-full h-full object-cover opacity-20"
           />
