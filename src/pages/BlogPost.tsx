@@ -124,7 +124,7 @@ export const BlogPost = () => {
     return (
       <div className="py-24 max-w-3xl mx-auto px-4 text-center min-h-[50vh] flex flex-col justify-center">
         <h1 className="text-3xl font-bold mb-4">Post not found</h1>
-        <Link to="/blog" className="text-teal-500 hover:text-teal-600 font-medium">← Back to Blog</Link>
+        <Link to="/blog" className="text-teal-500 hover:text-teal-600 font-medium">â† Back to Blog</Link>
       </div>
     );
   }
@@ -132,9 +132,13 @@ export const BlogPost = () => {
   return (
     <div className="py-24 bg-white min-h-screen">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <Link to="/blog" className="inline-flex items-center gap-2 text-teal-600 hover:text-teal-700 font-medium mb-8">
-          <ArrowLeft className="w-5 h-5" /> Back to Blog
-        </Link>
+        <div className="text-sm text-purple-600 flex items-center gap-2 font-medium mb-8">
+          <Link to="/" className="hover:text-purple-800 transition-colors">Home</Link>
+          <span>/</span>
+          <Link to="/blog" className="hover:text-purple-800 transition-colors">Blog</Link>
+          <span>/</span>
+          <span className="text-teal-600">{post.title}</span>
+        </div>
         
         <div className="mb-8">
           <span className="text-sm font-bold text-teal-600 uppercase tracking-wider">{post.category}</span>

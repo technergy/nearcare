@@ -119,7 +119,7 @@ export const ProgramDetail = () => {
     return (
       <div className="py-24 max-w-3xl mx-auto px-4 text-center min-h-[50vh] flex flex-col justify-center">
         <h1 className="text-3xl font-bold mb-4">Program not found</h1>
-        <Link to="/departments" className="text-teal-500 hover:text-teal-600 font-medium">← Back to Programs</Link>
+        <Link to="/departments" className="text-teal-500 hover:text-teal-600 font-medium">â† Back to Programs</Link>
       </div>
     );
   }
@@ -128,9 +128,13 @@ export const ProgramDetail = () => {
     <div className="bg-gray-50 min-h-screen">
       <div className="bg-purple-900 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link to="/departments" className="inline-flex items-center gap-2 text-teal-300 hover:text-teal-400 font-medium mb-8">
-            <ArrowLeft className="w-5 h-5" /> Back to Programs
-          </Link>
+          <div className="text-sm text-purple-200 flex items-center gap-2 font-medium mb-8">
+            <Link to="/" className="hover:text-white transition-colors">Home</Link>
+            <span>/</span>
+            <Link to="/departments" className="hover:text-white transition-colors">Programs</Link>
+            <span>/</span>
+            <span className="text-teal-300">{program.name}</span>
+          </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">{program.name}</h1>
           <p className="text-xl text-purple-200 max-w-2xl">{program.desc}</p>
         </div>

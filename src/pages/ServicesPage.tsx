@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Services } from '../components/Services';
 
 export const ServicesPage = () => {
@@ -16,6 +17,11 @@ export const ServicesPage = () => {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-sm text-purple-200 flex items-center justify-center gap-2 font-medium mb-6">
+            <Link to="/" className="hover:text-white transition-colors">Home</Link>
+            <span>/</span>
+            <span className="text-teal-300">Services</span>
+          </div>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Our Services</h1>
           <p className="text-lg md:text-xl text-purple-100 max-w-2xl mx-auto leading-relaxed">
             Discover the comprehensive range of healthcare services we offer to ensure your well-being. We provide expert care tailored to your unique needs.

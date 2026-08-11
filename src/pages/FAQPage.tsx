@@ -55,22 +55,35 @@ export const FAQPage = () => {
     : faqs.filter(faq => faq.category === selectedCategory);
 
   return (
-    <div className="py-20 bg-slate-50 min-h-screen">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        {/* Header */}
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-700 font-semibold tracking-wide px-4 py-1.5 rounded-full text-sm mb-4">
-            <HelpCircle className="w-4 h-4" />
-            <span>Plain-Language Help Center</span>
+    <div className="bg-slate-50 min-h-screen">
+      {/* Header */}
+      <div className="relative bg-purple-900 py-24 text-center overflow-hidden mb-12">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img 
+            src="https://images.pexels.com/photos/8415872/pexels-photo-8415872.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" 
+            alt="FAQ Background" 
+            className="w-full h-full object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-purple-900/80 to-purple-900/40"></div>
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-sm text-purple-200 flex items-center justify-center gap-2 font-medium mb-6">
+            <Link to="/" className="hover:text-white transition-colors">Home</Link>
+            <span>/</span>
+            <span className="text-teal-300">FAQ</span>
           </div>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-[#0f172a] mb-6">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-6">
             Frequently Asked Questions
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-purple-100 max-w-2xl mx-auto leading-relaxed">
             Everything you need to know about NDIS supports, your eligibility, our services, and how we empower your independence.
           </p>
         </div>
+      </div>
+
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
 
         {/* Category Filters */}
         <div className="flex flex-wrap justify-center gap-2 mb-10">

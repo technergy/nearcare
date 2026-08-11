@@ -7,40 +7,45 @@ type TabType = 'rights' | 'privacy' | 'complaints';
 export const CompliancePage = () => {
   const [activeTab, setActiveTab] = useState<TabType>('rights');
 
-  const handlePrint = () => {
-    window.print();
-  };
-
   return (
-    <div className="py-16 bg-slate-50 min-h-screen">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        {/* Print Only Header */}
-        <div className="hidden print-header mb-8 text-center border-b pb-4">
-          <h1 className="text-2xl font-bold">Near Care Support - NDIS Compliance & Participant Rights</h1>
-          <p className="text-sm text-gray-600">Approved NDIS Registered Provider | Phone: 1300 123 456</p>
+    <div className="bg-slate-50 min-h-screen">
+      {/* Page Header */}
+      <div className="relative bg-purple-900 py-24 text-center overflow-hidden mb-12">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img 
+            src="https://images.pexels.com/photos/8415703/pexels-photo-8415703.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" 
+            alt="Compliance Background" 
+            className="w-full h-full object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-purple-900/80 to-purple-900/40"></div>
         </div>
 
-        {/* Page Header */}
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-700 font-semibold tracking-wide px-4 py-1.5 rounded-full text-sm mb-4">
-            <ShieldCheck className="w-4 h-4" />
-            <span>NDIS Practice Standards & Compliance</span>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-sm text-purple-200 flex items-center justify-center gap-2 font-medium mb-6">
+            <Link to="/" className="hover:text-white transition-colors">Home</Link>
+            <span>/</span>
+            <span className="text-teal-300">Compliance & Rights</span>
           </div>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-[#0f172a] mb-6">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-6">
             Your Rights, Privacy & Feedback
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-purple-100 max-w-3xl mx-auto leading-relaxed">
             We support people to live independently and feel confident in their community. We believe in plain language, total transparency, and putting your rights first.
           </p>
-          <div className="mt-6 flex flex-wrap justify-center gap-4 no-print">
-            <button
-              onClick={handlePrint}
+        </div>
+      </div>
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+          <div className="mt-6 flex flex-wrap justify-center gap-4">
+            <a
+              href="/NearCare_Compliance_Policies.pdf"
+              download="NearCare_Compliance_Policies.pdf"
               className="inline-flex items-center gap-2 bg-white text-purple-700 hover:bg-purple-50 font-medium px-5 py-2.5 rounded-xl border border-purple-200 shadow-sm transition-colors"
             >
               <Printer className="w-4 h-4" />
-              Print / Save Policy Sheet
-            </button>
+              Download Policy Sheet (PDF)
+            </a>
             <Link
               to="/contact"
               className="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white font-medium px-5 py-2.5 rounded-xl shadow-sm transition-colors"
@@ -48,10 +53,9 @@ export const CompliancePage = () => {
               Contact Our Advocate Team
             </Link>
           </div>
-        </div>
 
         {/* Interactive Tabs */}
-        <div className="flex flex-col sm:flex-row justify-center gap-3 mb-10 no-print">
+        <div className="flex flex-col sm:flex-row justify-center gap-3 mb-10">
           <button
             onClick={() => setActiveTab('rights')}
             className={`flex items-center justify-center gap-2 px-6 py-4 rounded-xl font-semibold transition-all text-base ${
@@ -93,7 +97,7 @@ export const CompliancePage = () => {
         <div className="bg-white rounded-[2rem] shadow-xl p-8 sm:p-12 border border-gray-100">
           
           {/* PARTICIPANT RIGHTS TAB */}
-          {(activeTab === 'rights' || window.matchMedia('print').matches) && (
+          {activeTab === 'rights' && (
             <div className="space-y-8 animate-in fade-in duration-300">
               <div className="border-b border-gray-100 pb-6">
                 <h2 className="text-2xl sm:text-3xl font-bold text-[#0f172a] mb-3">
@@ -164,7 +168,7 @@ export const CompliancePage = () => {
           )}
 
           {/* PRIVACY POLICY TAB */}
-          {(activeTab === 'privacy' || window.matchMedia('print').matches) && (
+          {activeTab === 'privacy' && (
             <div className="space-y-8 animate-in fade-in duration-300">
               <div className="border-b border-gray-100 pb-6">
                 <h2 className="text-2xl sm:text-3xl font-bold text-[#0f172a] mb-3">
@@ -220,8 +224,8 @@ export const CompliancePage = () => {
             </div>
           )}
 
-          {/* COMPLAINTS & FEEDBACK TAB */}
-          {(activeTab === 'complaints' || window.matchMedia('print').matches) && (
+          {/* COMPLAINTS PROCESS TAB */}
+          {activeTab === 'complaints' && (
             <div className="space-y-8 animate-in fade-in duration-300">
               <div className="border-b border-gray-100 pb-6">
                 <h2 className="text-2xl sm:text-3xl font-bold text-[#0f172a] mb-3">

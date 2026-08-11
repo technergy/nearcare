@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { Logo } from './Logo';
 import { Menu, X, ChevronRight, ShieldCheck } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
@@ -22,7 +22,7 @@ export const Navbar = () => {
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" aria-label="Near Care Support Home">
-              <Logo className="w-9 h-9 md:w-10 md:h-10" layout="horizontal" />
+              <Logo className="h-16 w-auto md:h-20" />
             </Link>
           </div>
           

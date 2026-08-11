@@ -1,18 +1,36 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ContactForm } from '../components/ContactForm';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
 export const Contact = () => {
   return (
-    <div className="py-24 bg-gray-50 min-h-screen">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <span className="text-purple-600 font-semibold uppercase tracking-wider bg-purple-50 px-4 py-1 rounded-full">Contact Us</span>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mt-4 mb-6">Get In Touch</h1>
-          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+    <div className="bg-gray-50 min-h-screen">
+      <div className="relative bg-purple-900 py-24 text-center overflow-hidden mb-16">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img 
+            src="https://images.pexels.com/photos/7446986/pexels-photo-7446986.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" 
+            alt="Contact Background" 
+            className="w-full h-full object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-purple-900/80 to-purple-900/40"></div>
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-sm text-purple-200 flex items-center justify-center gap-2 font-medium mb-6">
+            <Link to="/" className="hover:text-white transition-colors">Home</Link>
+            <span>/</span>
+            <span className="text-teal-300">Contact Us</span>
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Get In Touch</h1>
+          <p className="text-lg md:text-xl text-purple-100 max-w-2xl mx-auto leading-relaxed">
             Have questions about our care options or housing support? Our friendly Australian team is here to help you navigate your journey.
           </p>
         </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
           <div className="lg:col-span-1 space-y-8">

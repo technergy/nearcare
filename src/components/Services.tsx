@@ -56,14 +56,12 @@ export const Services = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <span className="inline-block bg-purple-100 text-purple-700 font-semibold tracking-widest px-4 py-2 uppercase text-sm mb-4 rounded-full">
-            Tailored NDIS & Home Care Supports
-          </span>
+
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#0f172a] mb-6">
             Supports Designed Around Your Goals
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto leading-relaxed text-lg">
-            We use plain language and put you in the driver&apos;s seat. Explore our detailed door to door NDIS services—each structured so you can live independently, safely, and confidently.
+            We use plain language and put you in the driver&apos;s seat. Explore our detailed door to door NDIS servicesâ€”each structured so you can live independently, safely, and confidently.
           </p>
         </div>
 

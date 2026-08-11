@@ -21,10 +21,6 @@ export const Hero = () => {
         
         {/* Left Text Content */}
         <div className="flex-1 text-center lg:text-left">
-          <div className="inline-flex items-center gap-2 bg-purple-100/80 text-purple-700 px-4 py-1.5 rounded-full font-semibold text-sm mb-6 shadow-sm">
-            <Shield className="w-4 h-4 text-teal-600" />
-            <span>Approved Registered NDIS Provider (Door to Door Service)</span>
-          </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-[#0f172a] leading-[1.08] mb-6 tracking-tight">
             We Support You to Live <span className="text-purple-600">Independently</span>

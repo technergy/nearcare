@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Mail, Phone, Facebook, Twitter, Linkedin } from 'lucide-react';
 
 export const TopBar = () => {
