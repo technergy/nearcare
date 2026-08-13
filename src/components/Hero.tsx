@@ -5,17 +5,7 @@ import { Link } from 'react-router-dom';
 export const Hero = () => {
   return (
     <div className="relative bg-[#f8fafc] overflow-hidden pt-12 sm:pt-16 pb-28 md:pb-32">
-      {/* Background decoration */}
-      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-10 left-10 w-20 h-20 rounded-full bg-blue-100 opacity-50"></div>
-        <div className="absolute bottom-20 left-1/4 w-32 h-32 rounded-full bg-blue-100 opacity-50"></div>
-        <div className="absolute top-40 right-20 w-16 h-16 rounded-full bg-purple-100 opacity-50"></div>
-        
-        {/* Dash lines */}
-        <svg className="absolute w-full h-full" xmlns="http://www.w3.org/2000/svg">
-          <path d="M 0 500 Q 500 100, 1000 600 T 2000 400" fill="none" stroke="#e2e8f0" strokeWidth="2" strokeDasharray="10 10" />
-        </svg>
-      </div>
+
 
       <div className="max-w-[90%] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center gap-12">
         
@@ -31,22 +21,22 @@ export const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-            <Link 
-              to="/contact" 
+            <a 
+              href="/#contact" 
               className="w-full sm:w-auto inline-flex justify-center items-center gap-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-4 rounded-full transition-all shadow-lg shadow-purple-200 group text-base"
             >
               Book a Free Consultation
               <span className="bg-teal-400 rounded-full p-1 -mr-2 group-hover:bg-teal-500 transition-colors">
                 <ChevronRight className="w-5 h-5 text-white" />
               </span>
-            </Link>
+            </a>
 
-            <Link
-              to="/services"
+            <a
+              href="/#services"
               className="w-full sm:w-auto inline-flex justify-center items-center gap-2 bg-white hover:bg-gray-50 text-gray-800 font-semibold px-7 py-4 rounded-full border border-gray-200 transition-all text-base shadow-sm"
             >
               Explore NDIS Supports
-            </Link>
+            </a>
           </div>
 
           {/* Quick Highlight Badges */}
@@ -58,10 +48,6 @@ export const Hero = () => {
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-teal-500"></span>
               <span>1-Click NDIS Compliance & Rights</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-purple-600"></span>
-              <span>Zero Jargon Guaranteed</span>
             </div>
           </div>
         </div>

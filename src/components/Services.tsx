@@ -49,11 +49,7 @@ export const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-24 relative overflow-hidden bg-white">
-      {/* Background decorations */}
-      <div className="absolute top-40 left-10 w-24 h-24 rounded-full bg-purple-50 opacity-60 pointer-events-none"></div>
-      <div className="absolute bottom-20 right-10 w-16 h-16 rounded-full bg-teal-50 opacity-60 pointer-events-none"></div>
-      
+    <section id="services" className="py-24 relative bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
 
@@ -69,20 +65,17 @@ export const Services = () => {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="bg-white p-8 rounded-2xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.08)] border border-gray-100 hover:-translate-y-2 transition-all duration-300 group flex flex-col justify-between"
+              className="bg-white p-6 rounded-xl border border-gray-200 flex flex-col justify-between"
             >
               <div>
-                <div className="flex justify-between items-start mb-6">
-                  <div className="w-16 h-16 rounded-2xl bg-purple-50 flex items-center justify-center group-hover:bg-purple-600 transition-colors">
-                    {React.cloneElement(service.icon, { className: "w-8 h-8 group-hover:text-white transition-colors" })}
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="text-purple-600">
+                    {React.cloneElement(service.icon, { className: "w-8 h-8" })}
                   </div>
-                  <span className="text-xs font-bold bg-teal-50 text-teal-700 px-3 py-1 rounded-full border border-teal-200">
-                    {service.badge}
-                  </span>
+                  <h3 className="text-lg font-bold text-gray-900 leading-tight">
+                    {service.title}
+                  </h3>
                 </div>
-                <h3 className="text-xl font-bold text-[#0f172a] mb-3 group-hover:text-purple-600 transition-colors">
-                  {service.title}
-                </h3>
                 <p className="text-gray-600 leading-relaxed text-sm mb-6">
                   {service.description}
                 </p>
@@ -90,10 +83,10 @@ export const Services = () => {
 
               <Link 
                 to={service.link}
-                className="inline-flex items-center gap-1.5 font-semibold text-sm text-teal-600 hover:text-purple-700 transition-colors pt-4 border-t border-gray-100"
+                className="inline-flex items-center gap-1.5 font-medium text-sm text-purple-600 hover:text-purple-800 transition-colors"
               >
-                Learn More About This Support
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                Learn More
+                <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
           ))}
@@ -105,12 +98,12 @@ export const Services = () => {
               <h4 className="font-bold text-[#0f172a]">Not sure which NDIS support fits your plan?</h4>
               <p className="text-sm text-gray-600">Our Australian care navigators can review your NDIS budget with you for free.</p>
             </div>
-            <Link
-              to="/contact"
+            <a
+              href="/#contact"
               className="bg-purple-600 hover:bg-purple-700 text-white font-medium px-6 py-3 rounded-xl transition-colors whitespace-nowrap text-sm shadow-sm"
             >
               Talk to a Navigator
-            </Link>
+            </a>
           </div>
         </div>
 

@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     <footer className="bg-[#09152d] text-slate-300 py-16 border-t border-slate-800 no-print" aria-label="Footer">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
           {/* Brand Info */}
           <div className="lg:col-span-2 space-y-4">
@@ -20,38 +20,15 @@ export const Footer = () => {
 
           </div>
 
-          {/* Sitemap Quick Links */}
+          {/* Quick Links */}
           <div>
-            <h4 className="text-white font-bold mb-4 text-base tracking-wide">Main Navigation</h4>
+            <h4 className="text-white font-bold mb-4 text-base tracking-wide">Quick Links</h4>
             <ul className="space-y-2.5 text-sm">
               <li><Link to="/" className="hover:text-teal-400 transition-colors">Home</Link></li>
-              <li><Link to="/about" className="hover:text-teal-400 transition-colors">About Us</Link></li>
-              <li><Link to="/services" className="hover:text-teal-400 transition-colors">NDIS Supports</Link></li>
-              <li><Link to="/departments" className="hover:text-teal-400 transition-colors">Care Programs</Link></li>
-              <li><Link to="/housing" className="hover:text-teal-400 transition-colors">SIL & Housing</Link></li>
-              <li><Link to="/blog" className="hover:text-teal-400 transition-colors">News & Resources</Link></li>
-            </ul>
-          </div>
-
-          {/* NDIS Policies & Compliance (1-click access) */}
-          <div>
-            <h4 className="text-white font-bold mb-4 text-base tracking-wide">NDIS Policies & Rights</h4>
-            <ul className="space-y-2.5 text-sm">
-              <li><Link to="/compliance" className="hover:text-teal-400 transition-colors font-semibold text-teal-300">Compliance Hub</Link></li>
-              <li><Link to="/compliance" className="hover:text-teal-400 transition-colors">Participant Rights</Link></li>
-              <li><Link to="/compliance" className="hover:text-teal-400 transition-colors">Privacy Policy</Link></li>
-              <li><Link to="/compliance" className="hover:text-teal-400 transition-colors">Complaints & Feedback</Link></li>
-              <li><Link to="/faq" className="hover:text-teal-400 transition-colors">FAQ & Help Center</Link></li>
-              <li>
-                <a
-                  href="https://www.ndiscommission.gov.au/participants/complaints"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-xs text-purple-300 hover:text-white"
-                >
-                  NDIS Commission <ExternalLink className="w-3 h-3" />
-                </a>
-              </li>
+              <li><a href="/#about" className="hover:text-teal-400 transition-colors">About Us</a></li>
+              <li><a href="/#services" className="hover:text-teal-400 transition-colors">NDIS Supports</a></li>
+              <li><a href="/#programs" className="hover:text-teal-400 transition-colors">Care Programs</a></li>
+              <li><Link to="/compliance" className="hover:text-teal-400 transition-colors">Compliance & Rights</Link></li>
             </ul>
           </div>
 
@@ -72,25 +49,17 @@ export const Footer = () => {
                 <span>45 Collins Street, Melbourne VIC 3000</span>
               </li>
             </ul>
-            <div className="mt-6">
-              <Link
-                to="/contact"
-                className="block text-center bg-teal-400 hover:bg-teal-500 text-[#0f172a] font-bold px-4 py-2.5 rounded-xl text-sm transition-colors"
-              >
-                Book Free Consultation
-              </Link>
-            </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="border-t border-slate-800 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
-          <p>&copy; {new Date().getFullYear()} Near Care Support. All rights reserved. ABN 12 345 678 910.</p>
+          <p>&copy; {new Date().getFullYear()} Near Care Support. All rights reserved.</p>
           <div className="flex flex-wrap gap-6">
             <Link to="/compliance" className="hover:text-teal-400">Privacy Policy</Link>
             <Link to="/compliance" className="hover:text-teal-400">Complaints Process</Link>
             <Link to="/compliance" className="hover:text-teal-400">Charter of Rights</Link>
-            <Link to="/faq" className="hover:text-teal-400">FAQ</Link>
+            <a href="/#contact" className="hover:text-teal-400">Contact Help</a>
           </div>
         </div>
       </div>

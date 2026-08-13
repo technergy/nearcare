@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { Logo } from './Logo';
 import { Menu, X, ChevronRight, ShieldCheck } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
@@ -9,11 +9,9 @@ export const Navbar = () => {
 
   const navLinks = [
     { name: 'Home', href: '/' },
-    { name: 'About Us', href: '/about' },
-    { name: 'NDIS Services', href: '/services' },
-    { name: 'Care Programs', href: '/departments' },
-    { name: 'NDIS Policies & Rights', href: '/compliance' },
-    { name: 'FAQ', href: '/faq' },
+    { name: 'NDIS Services', href: '/#services' },
+    { name: 'Care Programs', href: '/#programs' },
+    { name: 'Policies', href: '/compliance' },
   ];
 
   return (
@@ -29,8 +27,16 @@ export const Navbar = () => {
           {/* Desktop Menu */}
           <div className="hidden lg:flex items-center space-x-6 xl:space-x-8">
             {navLinks.map((link) => {
-              const isActive = location.pathname === link.href;
-              return (
+              const isActive = location.pathname === link.href || (location.pathname === '/' && link.href === '/');
+              return link.href.includes('#') ? (
+                <a 
+                  key={link.name} 
+                  href={link.href}
+                  className="font-medium transition-colors font-sans text-[15px] px-2 py-1.5 rounded-lg text-gray-700 hover:text-teal-600 hover:bg-gray-50"
+                >
+                  {link.name}
+                </a>
+              ) : (
                 <Link 
                   key={link.name} 
                   to={link.href}
@@ -45,15 +51,15 @@ export const Navbar = () => {
                 </Link>
               );
             })}
-            <Link 
-              to="/contact" 
+            <a 
+              href="/#contact" 
               className="flex items-center gap-2 bg-purple-600 text-white px-6 py-3 rounded-full font-medium transition-all hover:bg-purple-700 shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-400"
             >
               Appointment
               <span className="bg-teal-400 rounded-full p-1 -mr-2">
                 <ChevronRight className="w-4 h-4 text-white" />
               </span>
-            </Link>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -85,8 +91,17 @@ export const Navbar = () => {
       >
         <div className="px-5 pt-3 pb-6 space-y-1.5">
           {navLinks.map((link) => {
-            const isActive = location.pathname === link.href;
-            return (
+            const isActive = location.pathname === link.href || (location.pathname === '/' && link.href === '/');
+            return link.href.includes('#') ? (
+              <a
+                key={link.name}
+                href={link.href}
+                onClick={() => setIsOpen(false)}
+                className="block px-4 py-3 rounded-xl text-base font-medium transition-colors text-gray-700 hover:text-teal-600 hover:bg-gray-50"
+              >
+                {link.name}
+              </a>
+            ) : (
               <Link
                 key={link.name}
                 to={link.href}
@@ -101,14 +116,14 @@ export const Navbar = () => {
               </Link>
             );
           })}
-          <Link
-            to="/contact"
+          <a
+            href="/#contact"
             onClick={() => setIsOpen(false)}
             className="flex items-center justify-center gap-2 mt-4 bg-purple-600 text-white px-4 py-3.5 rounded-xl text-base font-semibold hover:bg-purple-700 transition-colors shadow-md"
           >
             Book Free Consultation
             <ChevronRight className="w-5 h-5 text-teal-400" />
-          </Link>
+          </a>
         </div>
       </div>
     </nav>

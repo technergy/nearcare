@@ -77,7 +77,7 @@ export const ServiceDetail = () => {
     return (
       <div className="py-24 text-center">
         <h1 className="text-3xl font-bold text-gray-900 mb-4">Service Not Found</h1>
-        <Link to="/services" className="text-teal-600 hover:underline">Return to Services</Link>
+        <a href="/#services" className="text-teal-600 hover:underline">Return to Services</a>
       </div>
     );
   }
@@ -99,7 +99,7 @@ export const ServiceDetail = () => {
           <div className="text-sm text-purple-200 flex items-center gap-2 font-medium">
             <Link to="/" className="hover:text-white transition-colors">Home</Link>
             <span>/</span>
-            <Link to="/services" className="hover:text-white transition-colors">Services</Link>
+            <a href="/#services" className="hover:text-white transition-colors">Services</a>
             <span>/</span>
             <span className="text-teal-300">{service.title}</span>
           </div>
@@ -172,60 +172,7 @@ export const ServiceDetail = () => {
         </div>
       </div>
 
-      {/* Why Choose Us Section */}
-      <div className="bg-gray-50 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-12 text-center md:text-left">
-            <div className="inline-flex items-center gap-2 mb-4">
-              <div className="w-1.5 h-1.5 bg-purple-600"></div>
-              <h3 className="text-purple-600 font-bold text-lg">Why Choose Us</h3>
-              <div className="w-1.5 h-1.5 bg-purple-600"></div>
-            </div>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white p-8 rounded-xl shadow-[0_2px_10px_-3px_rgba(0,0,0,0.05)] border border-gray-100">
-              <HandHeart className="w-12 h-12 text-teal-600 mb-6" />
-              <h4 className="text-xl font-bold text-[#0f172a] mb-3">Participant-First Autonomy</h4>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                You decide how your supports are organized. We listen to what works best for you and your household, putting you firmly in the driver's seat of your own care.
-              </p>
-            </div>
-            
-            <div className="bg-white p-8 rounded-xl shadow-[0_2px_10px_-3px_rgba(0,0,0,0.05)] border border-gray-100">
-              <MessageSquare className="w-12 h-12 text-teal-600 mb-6" />
-              <h4 className="text-xl font-bold text-[#0f172a] mb-3">Plain Language Communication</h4>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                No confusing acronyms or bureaucratic barriers. We explain your NDIS funding clearly and transparently so you can make informed decisions.
-              </p>
-            </div>
-            
-            <div className="bg-white p-8 rounded-xl shadow-[0_2px_10px_-3px_rgba(0,0,0,0.05)] border border-gray-100">
-              <Award className="w-12 h-12 text-teal-600 mb-6" />
-              <h4 className="text-xl font-bold text-[#0f172a] mb-3">NDIS Support Provider</h4>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                We meet strict NDIS Practice Standards for quality, safety, and participant rights. We help navigate the NDIS guidelines to ensure you get the maximum value.
-              </p>
-            </div>
 
-            <div className="bg-white p-8 rounded-xl shadow-[0_2px_10px_-3px_rgba(0,0,0,0.05)] border border-gray-100 md:col-start-1 md:col-end-2 xl:col-auto">
-              <Heart className="w-12 h-12 text-teal-600 mb-6" />
-              <h4 className="text-xl font-bold text-[#0f172a] mb-3">Inclusive & Respectful</h4>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                We celebrate diversity and ensure culturally safe care for every participant. We respect your culture, your identity, and your personal goals.
-              </p>
-            </div>
-            
-            <div className="bg-white p-8 rounded-xl shadow-[0_2px_10px_-3px_rgba(0,0,0,0.05)] border border-gray-100 md:col-start-2 md:col-end-3 xl:col-auto">
-              <Shield className="w-12 h-12 text-teal-600 mb-6" />
-              <h4 className="text-xl font-bold text-[#0f172a] mb-3">Accountability & Transparency</h4>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                We welcome complaints and feedback with a zero-retaliation guarantee, continuously improving our care standards to provide the safest environment possible.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
