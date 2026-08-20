@@ -11,6 +11,7 @@ import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
 import { CompliancePage } from './pages/CompliancePage';
 import { ServiceDetail } from './pages/ServiceDetail';
+import { Contact } from './pages/Contact';
 function ScrollToTop() {
   const { pathname } = useLocation();
 
@@ -34,6 +35,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/services/:slug" element={<ServiceDetail />} />
             <Route path="/compliance" element={<CompliancePage />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
 

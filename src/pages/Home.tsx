@@ -24,7 +24,7 @@ export const Home = () => {
       </div>
       {/* <Testimonials /> */}
       {/* <BlogPreview /> */}
-      <div id="contact">
+      <div>
         <ContactCTA />
       </div>
     </>

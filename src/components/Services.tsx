@@ -98,12 +98,12 @@ export const Services = () => {
               <h4 className="font-bold text-[#0f172a]">Not sure which NDIS support fits your plan?</h4>
               <p className="text-sm text-gray-600">Our Australian care navigators can review your NDIS budget with you for free.</p>
             </div>
-            <a
-              href="/#contact"
+            <Link
+              to="/contact"
               className="bg-purple-600 hover:bg-purple-700 text-white font-medium px-6 py-3 rounded-xl transition-colors whitespace-nowrap text-sm shadow-sm"
             >
               Talk to a Navigator
-            </a>
+            </Link>
           </div>
         </div>
 

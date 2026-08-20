@@ -21,15 +21,15 @@ export const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-            <a 
-              href="/#contact" 
+            <Link 
+              to="/contact" 
               className="w-full sm:w-auto inline-flex justify-center items-center gap-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-4 rounded-full transition-all shadow-lg shadow-purple-200 group text-base"
             >
               Book a Free Consultation
               <span className="bg-teal-400 rounded-full p-1 -mr-2 group-hover:bg-teal-500 transition-colors">
                 <ChevronRight className="w-5 h-5 text-white" />
               </span>
-            </a>
+            </Link>
 
             <a
               href="/#services"

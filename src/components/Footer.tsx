@@ -59,7 +59,7 @@ export const Footer = () => {
             <Link to="/compliance" className="hover:text-teal-400">Privacy Policy</Link>
             <Link to="/compliance" className="hover:text-teal-400">Complaints Process</Link>
             <Link to="/compliance" className="hover:text-teal-400">Charter of Rights</Link>
-            <a href="/#contact" className="hover:text-teal-400">Contact Help</a>
+            <Link to="/contact" className="hover:text-teal-400">Contact Help</Link>
           </div>
         </div>
       </div>

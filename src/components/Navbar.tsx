@@ -51,15 +51,15 @@ export const Navbar = () => {
                 </Link>
               );
             })}
-            <a 
-              href="/#contact" 
+            <Link 
+              to="/contact" 
               className="flex items-center gap-2 bg-purple-600 text-white px-6 py-3 rounded-full font-medium transition-all hover:bg-purple-700 shadow-sm focus:outline-none focus:ring-2 focus:ring-purple-400"
             >
               Appointment
               <span className="bg-teal-400 rounded-full p-1 -mr-2">
                 <ChevronRight className="w-4 h-4 text-white" />
               </span>
-            </a>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -116,14 +116,14 @@ export const Navbar = () => {
               </Link>
             );
           })}
-          <a
-            href="/#contact"
+          <Link
+            to="/contact"
             onClick={() => setIsOpen(false)}
             className="flex items-center justify-center gap-2 mt-4 bg-purple-600 text-white px-4 py-3.5 rounded-xl text-base font-semibold hover:bg-purple-700 transition-colors shadow-md"
           >
             Book Free Consultation
             <ChevronRight className="w-5 h-5 text-teal-400" />
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
