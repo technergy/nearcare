@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 export const ContactCTA = () => {
   return (
@@ -14,7 +15,13 @@ export const ContactCTA = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 to-gray-900/40"></div>
       </div>
 
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <motion.div 
+        className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+      >
         <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-10 leading-tight">
           Any Inquiry? Contact <br className="hidden sm:block" /> Us As Needed.
         </h2>
@@ -24,7 +31,7 @@ export const ContactCTA = () => {
         >
           Contact Us
         </Link>
-      </div>
+      </motion.div>
     </div>
   );
 };

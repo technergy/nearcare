@@ -1,6 +1,7 @@
 import React from 'react';
 import { HeartPulse, Home, Users, Activity, FileText, Shield, ArrowRight, Car } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 export const Services = () => {
   const services = [
@@ -63,8 +64,12 @@ export const Services = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div 
+            <motion.div 
               key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-white p-6 rounded-xl border border-gray-200 flex flex-col justify-between"
             >
               <div>
@@ -88,11 +93,17 @@ export const Services = () => {
                 Learn More
                 <ArrowRight className="w-4 h-4" />
               </Link>
-            </div>
+            </motion.div>
           ))}
         </div>
 
-        <div className="mt-16 text-center">
+        <motion.div 
+          className="mt-16 text-center"
+          initial={{ opacity: 0, y: 15 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
           <div className="inline-flex flex-col sm:flex-row items-center justify-center gap-4 bg-slate-50 border border-slate-200 p-6 rounded-2xl max-w-2xl mx-auto">
             <div className="text-left">
               <h4 className="font-bold text-[#0f172a]">Not sure which NDIS support fits your plan?</h4>
@@ -105,7 +116,7 @@ export const Services = () => {
               Talk to a Navigator
             </Link>
           </div>
-        </div>
+        </motion.div>
 
       </div>
     </section>

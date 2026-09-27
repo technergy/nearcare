@@ -54,7 +54,7 @@ const serviceData: Record<string, {
   'domestic-services': {
     title: 'Domestic Services',
     description: 'Assistance with household tasks such as cleaning, laundry, and maintaining your living environment to ensure it is safe and comfortable.',
-    image: 'https://images.pexels.com/photos/7446752/pexels-photo-7446752.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: 'https://images.pexels.com/photos/5331118/pexels-photo-5331118.jpeg?auto=compress&cs=tinysrgb&w=1600',
     benefits: ['General house cleaning', 'Laundry and ironing', 'Meal preparation and cooking', 'Yard maintenance'],
     approach: 'We work alongside you or independently, matching our services to your preferred routine and household standards.',
     outcome: 'A clean, safe, and comfortable living space allowing you to focus on your personal goals.'

@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { Mail, Phone, Facebook, Twitter, Linkedin } from 'lucide-react';
 
 export const TopBar = () => {
@@ -11,7 +11,11 @@ export const TopBar = () => {
         </div>
         <div className="flex items-center gap-2 hover:text-teal-200 transition-colors cursor-pointer">
           <Phone className="w-4 h-4" />
-          <span>1300 123 456</span>
+          <span>Office: 0269 026 901</span>
+        </div>
+        <div className="flex items-center gap-2 hover:text-teal-200 transition-colors cursor-pointer">
+          <Phone className="w-4 h-4" />
+          <span>Mob: 0408 563 909</span>
         </div>
       </div>
       

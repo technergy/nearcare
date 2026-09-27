@@ -244,7 +244,7 @@ export const CompliancePage = () => {
                   </div>
                   <h3 className="font-bold text-[#0f172a] mb-2">Speak With Us Directly</h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
-                    Talk to your support worker, coordinator, or call our office on <strong>1300 123 456</strong>. You can also email us at <strong>feedback@nearcare.com.au</strong> or submit an anonymous note.
+                    Talk to your support worker, coordinator, or call our office on <strong>0269 026 901</strong>. You can also email us at <strong>feedback@nearcare.com.au</strong> or submit an anonymous note.
                   </p>
                 </div>
 

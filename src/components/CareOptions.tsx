@@ -1,4 +1,5 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const options = [
   {
@@ -38,7 +39,13 @@ export const CareOptions = () => {
         <div className="flex flex-col lg:flex-row gap-12 items-center lg:items-stretch">
           
           {/* Left Side: Options List */}
-          <div className="w-full lg:w-1/3 flex flex-col justify-center space-y-6">
+          <motion.div 
+            className="w-full lg:w-1/3 flex flex-col justify-center space-y-6"
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
             {options.map((option) => {
               const isActive = option.id === activeId;
               return (
@@ -72,17 +79,29 @@ export const CareOptions = () => {
                 </button>
               );
             })}
-          </div>
+          </motion.div>
 
           {/* Right Side: Active Image & Description */}
-          <div className="w-full lg:w-2/3">
+          <motion.div 
+            className="w-full lg:w-2/3"
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
             <div className="relative w-full h-[400px] md:h-[500px] rounded-3xl overflow-hidden group">
-              <img 
-                key={activeOption.id}
-                src={activeOption.image} 
-                alt={activeOption.title}
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
-              />
+              <AnimatePresence mode="wait">
+                <motion.img 
+                  key={activeOption.id}
+                  initial={{ opacity: 0, scale: 1.05 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.4 }}
+                  src={activeOption.image} 
+                  alt={activeOption.title}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
+                />
+              </AnimatePresence>
               
               {/* Optional overlay to match the red tint from the user's snapshot, but using theme color */}
               <div className="absolute inset-0 bg-purple-900/30 mix-blend-multiply pointer-events-none" />
@@ -93,7 +112,7 @@ export const CareOptions = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
 
         </div>
       </div>

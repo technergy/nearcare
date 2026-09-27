@@ -38,7 +38,11 @@ export const Footer = () => {
             <ul className="space-y-3 text-sm text-slate-400">
               <li className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-teal-400 flex-shrink-0" />
-                <a href="tel:1300123456" className="hover:text-white font-medium">1300 123 456</a>
+                <a href="tel:0269026901" className="hover:text-white font-medium">Office: 0269 026 901</a>
+              </li>
+              <li className="flex items-center gap-2.5">
+                <Phone className="w-4 h-4 text-teal-400 flex-shrink-0" />
+                <a href="tel:0408563909" className="hover:text-white font-medium">Mob: 0408 563 909</a>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-teal-400 flex-shrink-0" />

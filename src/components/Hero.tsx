@@ -1,6 +1,7 @@
 import React from 'react';
 import { ChevronRight, Shield, Heart } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 export const Hero = () => {
   return (
@@ -10,7 +11,12 @@ export const Hero = () => {
       <div className="max-w-[90%] mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col lg:flex-row items-center gap-12">
         
         {/* Left Text Content */}
-        <div className="flex-1 text-center lg:text-left">
+        <motion.div 
+          className="flex-1 text-center lg:text-left"
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-[#0f172a] leading-[1.08] mb-6 tracking-tight">
             We Support You to Live <span className="text-purple-600">Independently</span>
@@ -50,10 +56,15 @@ export const Hero = () => {
               <span>1-Click NDIS Compliance & Rights</span>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Right Graphic/Image */}
-        <div className="flex-1 w-full relative h-[350px] sm:h-[420px] lg:h-[520px] mt-8 lg:mt-0">
+        <motion.div 
+          className="flex-1 w-full relative h-[350px] sm:h-[420px] lg:h-[520px] mt-8 lg:mt-0"
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+        >
           {/* Custom Blob Shape Container for the image */}
           <div className="absolute inset-0 flex items-center justify-center">
              <div className="relative w-full h-full max-w-[360px] sm:max-w-[420px] lg:max-w-[520px] aspect-square">
@@ -84,7 +95,7 @@ export const Hero = () => {
                 />
              </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
