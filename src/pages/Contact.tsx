@@ -68,7 +68,7 @@ export const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm text-gray-500 font-medium mb-1">Office Location</p>
-                    <p className="text-base font-semibold text-gray-900">45 Collins Street,<br />Melbourne VIC 3000</p>
+                    <p className="text-base font-semibold text-gray-900">1/7 Bethany Pl,<br />Cootamundra NSW 2590</p>
                   </div>
                 </div>
                 

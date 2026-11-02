@@ -50,7 +50,7 @@ export const Footer = () => {
               </li>
               <li className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-teal-400 flex-shrink-0 mt-1" />
-                <span>45 Collins Street, Melbourne VIC 3000</span>
+                <span>1/7 Bethany Pl, Cootamundra NSW 2590</span>
               </li>
             </ul>
           </div>
